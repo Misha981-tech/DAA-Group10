@@ -7,4 +7,8 @@ def insertion_sort(array, n):
             j = j - 1
         array[j + 1] = key
     return array
+user_input = input("Enter numbers to be sorted (space-separated): ")
+input_numbers = user_input.split()
+numbers = []
+
 
