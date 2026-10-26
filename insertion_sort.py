@@ -10,5 +10,6 @@ def insertion_sort(array, n):
 user_input = input("Enter numbers to be sorted (space-separated): ")
 input_numbers = user_input.split()
 numbers = []
-
+for num in input_numbers:
+    numbers.append(int(num))
 
