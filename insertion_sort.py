@@ -13,3 +13,6 @@ numbers = []
 for num in input_numbers:
     numbers.append(int(num))
 
+if len(numbers) > 0:
+    num_items = len(numbers)
+
