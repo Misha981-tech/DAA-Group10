@@ -69,11 +69,11 @@ if user_month in pm25_dictionary:
 else:
     print("Month not found.")
     
-highest_pm25_month = max(pm25_dictionary, key=pm25_dictionary.get)
+max_pm25_val=max(pm25_dictionary.values())    
+highest_pm25_dict = {month:val for month, val in pm25_dictionary.items() if val==max_pm25_val}
 print("\n7(iii) Month with the highest PM2.5:")
 print(
-    highest_pm25_month, "-",
-    pm25_dictionary[highest_pm25_month], "ug/m3"
+    highest_pm25_dict
 )
 
 dictionary_average = sum(pm25_dictionary.values()) / len(pm25_dictionary)
