@@ -16,3 +16,5 @@ for num in input_numbers:
 if len(numbers) > 0:
     num_items = len(numbers)
 
+ # Run the sort
+    sorted_numbers = insertion_sort(numbers, num_items)
