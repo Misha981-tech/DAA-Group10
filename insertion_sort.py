@@ -18,3 +18,8 @@ if len(numbers) > 0:
 
  # Run the sort
     sorted_numbers = insertion_sort(numbers, num_items)
+
+# Print the result outside the function
+    for num in sorted_numbers:
+        print(num, end=" ")
+    print()
